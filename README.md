@@ -2,6 +2,14 @@
 
 ### Lýsing
 
+#### Höfundar:
+
+<p> Eva Lillý Heimisdóttir <br>
+Reynir Þór Guðmundsson </p>
+
+
+
+
 ### Myndir
 
 ![IMG_6639](https://user-images.githubusercontent.com/68781129/234223192-30ffcf5f-c515-4417-b9d7-86ea40ea115a.jpeg)
