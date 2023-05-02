@@ -38,6 +38,6 @@ Reynir Þór Guðmundsson </p>
 
 ### Myndbönd
 
-https://youtube.com/shorts/HAaQLIJMhWM?feature=share 
+[Arduino 1](https://youtube.com/shorts/HAaQLIJMhWM?feature=share)
 
-https://youtube.com/shorts/wZRiN4VAOr4?feature=share 
+[Arduino 2](https://youtube.com/shorts/wZRiN4VAOr4?feature=share)
