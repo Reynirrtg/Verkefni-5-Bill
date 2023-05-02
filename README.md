@@ -37,3 +37,7 @@ Reynir Þór Guðmundsson </p>
 ![IMG_6652](https://user-images.githubusercontent.com/68781129/234223409-36ad099e-c437-4024-b9f0-03c528491b56.jpeg)
 
 ### Myndbönd
+
+https://youtube.com/shorts/HAaQLIJMhWM?feature=share 
+
+https://youtube.com/shorts/wZRiN4VAOr4?feature=share 
