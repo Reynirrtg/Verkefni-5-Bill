@@ -41,3 +41,5 @@ Reynir Þór Guðmundsson </p>
 [Arduino 1](https://youtube.com/shorts/HAaQLIJMhWM?feature=share)
 
 [Arduino 2](https://youtube.com/shorts/wZRiN4VAOr4?feature=share)
+
+[Arduino 3](https://youtube.com/shorts/-di13BvDnfY?feature=share)
