@@ -2,6 +2,21 @@
 
 ### Lýsing
 
+#### Efni notað:
+
+<p> Arduino Kit: <br>
+    Ultrasonic Sensor <br>
+    Lítill skjár
+    Ljós <br>
+    Snúrur/Vírar <br>
+    9v batterí <br>
+  
+    Annað: <br>
+    Tape
+    Tússpenni
+</p>
+  
+
 #### Höfundar:
 
 <p> Eva Lillý Heimisdóttir <br>
