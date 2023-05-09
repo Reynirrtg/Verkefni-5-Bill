@@ -7,9 +7,6 @@
 <p> Eva Lillý Heimisdóttir <br>
 Reynir Þór Guðmundsson </p>
 
-
-
-
 ### Myndir
 
 ![IMG_6639](https://user-images.githubusercontent.com/68781129/234223192-30ffcf5f-c515-4417-b9d7-86ea40ea115a.jpeg)
@@ -35,6 +32,12 @@ Reynir Þór Guðmundsson </p>
 ![IMG_6649](https://user-images.githubusercontent.com/68781129/234223394-d14f5cf2-e797-400d-bf89-d47f916b732e.jpeg)
 
 ![IMG_6652](https://user-images.githubusercontent.com/68781129/234223409-36ad099e-c437-4024-b9f0-03c528491b56.jpeg)
+
+![IMG_6724](https://user-images.githubusercontent.com/68781129/237047133-c40963ff-18fe-4e6c-aec6-49bdbc349d6a.jpeg)
+
+![IMG_6725](https://user-images.githubusercontent.com/68781129/237047461-ed602b04-3b74-4316-b646-51181d1ed3b0.jpeg)
+
+![IMG_6726](https://user-images.githubusercontent.com/68781129/237047489-a34288d2-8188-4561-8c2c-a78b6bf65c71.jpeg)
 
 ### Myndbönd
 
