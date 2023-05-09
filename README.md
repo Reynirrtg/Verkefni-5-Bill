@@ -1,19 +1,21 @@
 ## Verkefni-5-Bill
 
-### Lýsing
+#### Stutt Lýsing
+
+<p> Fyrstu tímarnir fóru í að setja bílinn saman. Reynir setti vírana á sína staði og púslaði hlutunum saman á meðan Eva lóðaði allt fyrir bílinn. Allir tímarnir eftir það fóru í að kóða og setja saman öll verkefnin inn á verkefnalýsingunni og náðum að klára um.þ.b eitt verkefni á einum eða tvemur tímum. Við vorum oft að bæta allskonar við bílinn í verkefnunum og okkur lýst mjög vel á hvernig hann endaði. Að klára verkefnin gekk oftast mjög hratt en það voru nokkur skipti sem við festumst, oftast vegna lítilli villu í kóðanum, lóðuninni eða vírunum. En við fundum alltaf lausnina að þeim. Verkefnið gekk því mjög vel og við njóttum þess að vinna það mest allan tímann.
 
 #### Efni notað:
 
-<p> Arduino Kit: <br>
+<p> 
+    Arduino Kit: <br>
     Ultrasonic Sensor <br>
     Lítill skjár
     Ljós <br>
     Snúrur/Vírar <br>
     9v batterí <br>
-  
     Annað: <br>
-    Tape
-    Tússpenni
+    Tape <br>
+    Tússpenni <br>
 </p>
   
 
