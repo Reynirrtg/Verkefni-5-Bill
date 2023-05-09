@@ -1,0 +1,282 @@
+// Sonic skynjari
+int echoPin = 9;
+int trigPin = 10;
+
+// Mótor A
+int pwmA = 3;
+int Ai1 = 5;
+int Ai2 = 4;
+
+// Mótor B
+int pwmB = 6;
+int Bi1 = 7;
+int Bi2 = 8;
+
+int fjarlaegd;
+long randomNumber;
+
+#include "tdelay.h"
+const int LED = A0;
+const int LED2 = A1;
+bool LED_on = true;
+bool LED2_on = true;
+bool ljos_on = true;
+TDelay LED_bidtimi(1000);
+TDelay LED2_bidtimi(1000);
+TDelay ljos_bidtimi(250);
+
+int rautt = 2;
+int blatt = 11;
+
+void setup() {
+  // Sonic pinnar
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  // Mótor pinnar
+  pinMode(pwmA, OUTPUT);
+  pinMode(pwmB, OUTPUT);
+  pinMode(Ai1, OUTPUT);
+  pinMode(Ai2, OUTPUT);
+  pinMode(Bi1, OUTPUT);
+  pinMode(Bi2, OUTPUT);
+  Serial.begin(9600);
+  pinMode(LED, OUTPUT);
+  pinMode(LED2, OUTPUT);
+  pinMode(blatt, OUTPUT);
+  pinMode(rautt, OUTPUT);
+
+}
+
+void loop() {
+
+  maelaFjarlaegd();
+  int maela = maelaFjarlaegd();
+
+  Serial.println(maela);
+  afram(200);
+  if (maela < 50) {
+    stopp(0);
+    delay(1000);
+    vinstri(100);
+    delay(800);
+    int v = maelaFjarlaegd();
+    stopp(0);
+    delay(1000);
+    haegri(100);
+    delay(1300);
+    int h = maelaFjarlaegd();
+    stopp(0);
+    delay(1000);
+    if (v < 50 && h < 50) {
+      haegri(100);
+      delay(800);
+    } else if (v > h) {
+      haegri(100);
+      delay(1300);
+      stopp(0);
+      delay(1000);
+      afram(100);
+      delay(1000);
+    }
+  }
+    //  if(ljos_bidtimi.timiLidinn() == true) {
+    //   ljos_on = !ljos_on;
+    // }
+
+    // digitalWrite(rautt, ljos_on);
+    // digitalWrite(blatt, !ljos_on);
+    //   //stopp(0);
+    //   //delay(2500);
+    // }
+
+
+    // if(maela < 50) {
+    //   randomNumber = random(1, 3);
+    //   if(randomNumber == 1) {
+    //     haegri(100);
+    //     delay(800);
+    //     stopp(0);
+    //     delay(1000);
+    //   }
+    //   else {
+    //     vinstri(100);
+    //     delay(800);
+    //     stopp(0);
+    //     delay(1000);
+    //   }
+    // afram(100);
+  }
+
+  // afram(255);
+  // delay(1000);
+  // afram2(127);
+  // delay(1000);
+  // stopp(1000);
+  // delay(1000);
+  // haegri(85);
+  // delay(800);
+  // stopp(1000);
+  // delay(1000);
+  // backwards(127);
+  // delay(1000);
+  // stopp(1000);
+  // delay(1000);
+  // vinstri(85);
+  // delay(800);
+  // stopp(1000);
+  // delay(1000);
+  // haegri(85);
+  // delay(1600);
+  // stopp(1000);
+  // delay(1000);
+
+  void mina(int hradi) {
+  }
+
+  void afram(int hradi) {
+
+    if (ljos_bidtimi.timiLidinn() == true) {
+      ljos_on = !ljos_on;
+    }
+
+    digitalWrite(rautt, ljos_on);
+    digitalWrite(blatt, !ljos_on);
+
+    digitalWrite(LED, LOW);
+    digitalWrite(LED2, LOW);
+
+    // Set Motor A forward
+    digitalWrite(Ai1, HIGH);
+    digitalWrite(Ai2, LOW);
+
+    // Set Motor B forward
+    digitalWrite(Bi1, HIGH);
+    digitalWrite(Bi2, LOW);
+
+    // Set the motor speeds
+    analogWrite(pwmA, hradi);
+    analogWrite(pwmB, hradi);
+  }
+
+  // void afram2(int hradi) {
+
+  //   if(ljos_bidtimi.timiLidinn() == true) {
+  //     ljos_on = !ljos_on;
+  //   }
+
+  //   digitalWrite(rautt, ljos_on);
+  //   digitalWrite(blatt, !ljos_on);
+
+  //   digitalWrite(LED, LOW);
+  //   digitalWrite(LED2, LOW);
+
+  //   // Set Motor A forward
+  //   digitalWrite(Ai1, HIGH);
+  //   digitalWrite(Ai2, LOW);
+
+  //   // Set Motor B forward
+  //   digitalWrite(Bi1, HIGH);
+  //   digitalWrite(Bi2, LOW);
+
+  //   // Set the motor speeds
+  //   analogWrite(pwmA, hradi);
+  //   analogWrite(pwmB, hradi);
+  // }
+
+  void haegri(int hradi) {
+
+    digitalWrite(blatt, LOW);
+    digitalWrite(rautt, LOW);
+
+    digitalWrite(LED, HIGH);
+    digitalWrite(LED2, LOW);
+
+    // Set Motor A forward
+    digitalWrite(Ai1, HIGH);
+    digitalWrite(Ai2, LOW);
+
+    // Set Motor B forward
+    digitalWrite(Bi1, LOW);
+    digitalWrite(Bi2, HIGH);
+
+    // Set the motor speeds
+    analogWrite(pwmA, hradi);
+    analogWrite(pwmB, hradi);
+  }
+
+  void vinstri(int hradi) {
+
+    digitalWrite(blatt, LOW);
+    digitalWrite(rautt, LOW);
+
+    digitalWrite(LED, LOW);
+    digitalWrite(LED2, HIGH);
+
+    // Set Motor A forward
+    digitalWrite(Ai1, LOW);
+    digitalWrite(Ai2, HIGH);
+
+    // Set Motor B forward
+    digitalWrite(Bi1, HIGH);
+    digitalWrite(Bi2, LOW);
+
+    // Set the motor speeds
+    analogWrite(pwmA, hradi);
+    analogWrite(pwmB, hradi);
+  }
+
+  void backwards(int hradi) {
+
+    digitalWrite(blatt, LOW);
+    digitalWrite(rautt, LOW);
+
+    digitalWrite(LED, LOW);
+    digitalWrite(LED2, LOW);
+
+    // Set Motor A forward
+    digitalWrite(Ai1, LOW);
+    digitalWrite(Ai2, HIGH);
+
+    // Set Motor B forward
+    digitalWrite(Bi1, LOW);
+    digitalWrite(Bi2, HIGH);
+
+    // Set the motor speeds
+    analogWrite(pwmA, hradi);
+    analogWrite(pwmB, hradi);
+  }
+
+  void stopp(int hradi) {
+
+    digitalWrite(blatt, LOW);
+    digitalWrite(rautt, LOW);
+
+    digitalWrite(LED, LOW);
+    digitalWrite(LED2, LOW);
+
+    // Set Motor A forward
+    digitalWrite(Ai1, LOW);
+    digitalWrite(Ai2, LOW);
+
+    // Set Motor B forward
+    digitalWrite(Bi1, LOW);
+    digitalWrite(Bi2, LOW);
+
+    // Set the motor speeds
+    analogWrite(pwmA, hradi);
+    analogWrite(pwmB, hradi);
+  }
+  int maelaFjarlaegd() {
+    // sendir út cum
+    //digitalWrite(blatt, LOW);
+    //digitalWrite(rautt, LOW);
+
+    digitalWrite(trigPin, LOW);
+    delayMicroseconds(2);
+    digitalWrite(trigPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(trigPin, LOW);
+
+    // mælt hvað púlsarnir voru lengi að berast til baka
+    return pulseIn(echoPin, HIGH) / 58.0;  // deilt með 58 til að breyta í cm
+  }
